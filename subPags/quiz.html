@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/style.css">
     <style>
 
-body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+section {
+    background-image: url(../imagens/torcida.jpg);
+    background-color: black;
+    /*-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);*/
+}
          .container-quiz {
             background-color: #fff;
             padding: 20px;
@@ -66,21 +63,38 @@ body {
             display: none;
         }
     </style>
-    <title>Document</title>
+    <title>Quiz Flamengo</title>
 </head>
 <body>
-    <body>
-        <div class="container-quiz">
+
+        <header>
+            <img src="../imagens/logo1.jpg" alt="Logo do Flamengo" id="logoHeader">
+            <h1 class="h1header">Clube de regatas Flamengo</h1>
+            <nav>
+                <a href="../index.html" class="opcoes">INÍCIO</a>
+                <a href="historia.html" class="opcoes">HISTÓRIA</a>
+                <a href="titulos.html" class="opcoes">TÍTULOS</a>
+                <a href="elenco.html" class="opcoes">ELENCO</a>
+                <a href="idolos.html" class="opcoes">ÍDOLOS</a>
+                <a href="quiz.html" class="opcoes">QUIZ</a>
+            </nav>
+        </header>
+
+        <section>        
+        <div class="container-quiz"> 
             <h1>Quiz Flamengo</h1>
-            <div id="quiz">
-                <!-- Perguntas e opções serão inseridas dinamicamente aqui -->
-            </div>
+            <div id="quiz"></div>
             <div class="resultado oculto">
                 <p id="pontuacao"></p>
                 <button onclick="reiniciarQuiz()">Tentar novamente</button>
             </div>
         </div>
-    
+        </section>
+        
+        <footer>
+            <p>Desenvolvido por Guilherme Adriano e Pedro Bittencourt</p>
+        </footer>
+
         <script>
             const perguntas = [
                 {
@@ -222,7 +236,6 @@ body {
             // Inicializar o quiz
             carregarPergunta();
         </script>
-    </body>
-    </html>
+    
 </body>
 </html>
