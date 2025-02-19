@@ -57,15 +57,21 @@ text-align: center;
 
 h2 {
     font: 25px MengaoGordasso, sans-serif;
+    text-align: center;
 }
 
 h3 {
     color: #D2232A;
     font: 23px MengaoGordin, sans-serif;
+    display: inline;
 }
 
 p, li{
     font: 20px Mengao, sans-serif;
+}
+
+p{
+    text-indent: 3em;
 }
 
 nav {
@@ -113,7 +119,24 @@ nav {
     height: 400px;
     width: 500px;
     margin: 25px 0px;
+}
 
+.imgHistoria{
+    height: 400px;
+    width: 500px;
+    margin: 25px 0px;
+}
+
+.imgTitulo{
+    height: 415px;
+    width: 1550px;
+    margin: 25px 0px;
+}
+
+.imgIntroducao{
+    height: 415px;
+    width: 925px;
+    margin: 25px 0px;
 }
 
 section {
@@ -143,6 +166,11 @@ article {
     border-radius: 8px;
 }
 
+ul, ol
+{
+    list-style-position: inside;
+}
+
 
 
 footer {
@@ -152,4 +180,53 @@ footer {
     font: 20px Mengao, sans-serif;
     text-align: center;
     grid-column: 1/4;
+}
+
+
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+    }
+
+    .h1header {
+        font-size: 50px;
+    }
+
+    .logoHeader {
+        width: 120px;
+        height: 120px;
+        left: 20px;
+    }
+
+    .imgIdolos {
+        height: 300px;
+        width: 100%;
+    }
+
+    section {
+        min-width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .h1header {
+        font-size: 35px;
+    }
+
+    .logoHeader {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imgIdolos {
+        height: 250px;
+    }
+
+    .opcoes {
+        width: 100px;
+        font-size: 16px;
+    }
 }
