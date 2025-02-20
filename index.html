@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flamengo</title>
     <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
-   
-    </head>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+</head>
+
 <body>
     <header>
         <img src="imagens/logo1.jpg" alt="Logo do Flamengo" class="logoHeader">
         <h1 class="h1header">Clube de regatas Flamengo</h1>
-        <nav>
+
+        <nav id="barra-navegacao">
             <a href="index.html" class="opcoes">INÍCIO</a>
             <a href="subPags/historia.html" class="opcoes">HISTÓRIA</a>
             <a href="subPags/titulos.html" class="opcoes">TÍTULOS</a>
@@ -21,12 +27,13 @@
             <a href="subPags/quiz.html" class="opcoes">QUIZ</a>
         </nav>
 
+        <i class="material-symbols-outlined icone-burger" onclick="clicar()" style="display: none;">menu</i>
     </header>
 
 
     <section>
         <article>
-           
+
             <h2>INTRODUÇÃO</h2>
 
             <p>O Clube de Regatas do Flamengo, conhecido popularmente como Flamengo e pelos apelidos de Fla, Mengo e
@@ -34,7 +41,8 @@
                 de 1895, no bairro do Flamengo, para a prática do remo, tornou-se um dos clubes mais bem-sucedidos e
                 populares do Brasil, especialmente no futebol. Suas cores tradicionais são vermelho e preto, e seus
                 principais rivais são o Vasco da Gama, o Fluminense e o Botafogo.</p>
-                <picture class="classLi"><img src="imagens/escudos.webp" alt="Escudos Flamengo" class="imgIntroducao"></picture>
+            <picture class="classLi"><img src="imagens/escudos.webp" alt="Escudos Flamengo" class="imgIntroducao">
+            </picture>
 
             <p>Entre suas maiores glórias no futebol, destacam-se a conquista da Copa Intercontinental (sendo o único
                 clube carioca com um título mundial reconhecido pela FIFA) e três títulos da Copa Libertadores da
@@ -59,7 +67,8 @@
                 primeiro clube do país a conquistar todos os títulos nacionais e internacionais disponíveis: campeonato,
                 copa e supercopa nacionais, dois principais torneios continentais, supercopa continental e torneio
                 intercontinental.</p>
-                <picture class="classLi"><img src="imagens/brasileiro.webp" alt="Levantando taça campeonato brasileiro" class="imgIntroducao"></picture>
+            <picture class="classLi"><img src="imagens/brasileiro.webp" alt="Levantando taça campeonato brasileiro"
+                    class="imgIntroducao"></picture>
 
 
             <p>Outros feitos incluem ter sido eleito o nono maior clube do Século XX pela FIFA e, em 2019, o melhor time
@@ -79,16 +88,20 @@
                 milhões de euros, atualmente ocupa a 43ª posição do ranking, sendo o único brasileiro do top 50. Um
                 Fla-Flu detém o recorde mundial de público em partidas entre clubes, com 194.603
                 espectadores na final do Campeonato Carioca de 1963.</p>
-                <picture class="classLi"><img src="imagens/torcidaMengao.webp" alt="Torcida Flamengo" class="imgIntroducao"></picture>
-            
-           
+            <picture class="classLi"><img src="imagens/torcidaMengao.webp" alt="Torcida Flamengo" class="imgIntroducao">
+            </picture>
+
+
         </article>
-        
+
     </section>
 
     <footer>
         <p>Desenvolvido por Guilherme Adriano e Pedro Bittencourt</p>
     </footer>
-    
+
+    <script src="scripts/script.js"></script>
+
 </body>
+
 </html>

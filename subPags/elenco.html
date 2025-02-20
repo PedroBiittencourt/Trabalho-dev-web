@@ -7,12 +7,14 @@
     <link rel="shortcut icon" href="../imagens/icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Elenco Atual</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <style>
-        h3{
+        h3 {
             display: block;
         }
-        .elenco-foto
-        {
+
+        .elenco-foto {
             width: 250px;
             height: 200px;
             margin-bottom: 20px;
@@ -46,15 +48,15 @@
             height: 200px;
         }
 
-        h3{
+        h3 {
             margin: 20px 0px 10px 0px;
-            text-align: 
-            center;
-        }
-        p{
-            text-indent: 0em;
+            text-align:
+                center;
         }
 
+        p {
+            text-indent: 0em !important;
+        }
     </style>
 </head>
 
@@ -62,7 +64,7 @@
     <header>
         <img src="../imagens/logo1.jpg" alt="Logo do Flamengo" class="logoHeader">
         <h1 class="h1header">Clube de regatas Flamengo</h1>
-        <nav>
+        <nav id="barra-navegacao">
             <a href="../index.html" class="opcoes">INÍCIO</a>
             <a href="historia.html" class="opcoes">HISTÓRIA</a>
             <a href="titulos.html" class="opcoes">TÍTULOS</a>
@@ -70,325 +72,333 @@
             <a href="idolos.html" class="opcoes">ÍDOLOS</a>
             <a href="quiz.html" class="opcoes">QUIZ</a>
         </nav>
+        <i class="material-symbols-outlined icone-burger" onclick="clicar()" style="display: none;">menu</i>
     </header>
 
     <section>
         <article>
-            <h2>Elenco atual do Flamengo</h1>
+            <h2>Elenco atual do Flamengo</h2>
 
-            <h3>Técnico</h2>
+                <h3>Técnico</h3>
             <ul class="elenco">
                 <li class="elenco-foto">
                     <picture>
-                        <img src="../imagens/jogadores flamengo/filipe.webp" alt="Filipe Luís" class="foto-jogador">
-                        <p class="nome">Filipe Luís</p>
+                        <img src="../imagens/jogadores-flamengo/filipe.webp" alt="Filipe Luís" class="foto-jogador">
                     </picture>
+                    <p class="nome">Filipe Luís</p>
                 </li>
             </ul>
 
-            <h3>Atacantes</h2>
-            <ul class="elenco">
-                <l1 class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/ata/pedro.webp" alt="Pedro" class="foto-jogador">
-                    </picture>
-                    <p class="nome">Pedro</p>
-                    <p class="numero">9</p>
-                </l1>
-                <l1 class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/ata/cebol.webp" alt="Everton Cebolinha"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Everton Cebolinha</p>
-                    <p class="numero">11</p>
-                </l1>
-                <l1 class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/ata/juninho.avif" alt="Juninho Vieira"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Juninho Vieira</p>
-                    <p class="numero">23</p>
-                </l1>
-                <l1 class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/ata/bh27.jpg" alt="Bruno Henrique" class="foto-jogador">
-                    </picture>
-                    <p class="nome">Bruno Henrique</p>
-                    <p class="numero">27</p>
-                </l1>
-                <l1 class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/ata/rorozinho.webp" alt="Michael" class="foto-jogador">
-                    </picture>
-                    <p class="nome">Michael</p>
-                    <p class="numero">30</p>
-                </l1>
-                <l1 class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/ata/ft.png" alt="Felipe Teresa" class="foto-jogador">
-                    </picture>
-                    <p class="nome">Felipe Teresa</p>
-                    <p class="numero">40</p>
-                </l1>
-                <l1 class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/ata/plata.jpg" alt="Gonzalo Plata" class="foto-jogador">
-                    </picture>
-                    <p class="nome">Gonzalo Plata</p>
-                    <p class="numero">50</p>
-                </l1>
-                <l1 class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/ata/Shola.webp" alt="Ogundana Shola"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Ogundana Shola</p>
-                    <p class="numero">54</p>
-                </l1>
-                <l1 class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/ata/wally.png" alt="Wallace Yan" class="foto-jogador">
-                    </picture>
-                    <p class="nome">Wallace Yan</p>
-                    <p class="numero">64</p>
-                </l1>
-            </ul>
+            <h3>Atacantes</h3>
+                <ul class="elenco">
+                    <li class="elenco-foto">
+                        <picture>
+                            <img src="../imagens/jogadores-flamengo/ata/pedro.webp" alt="Pedro" class="foto-jogador">
+                        </picture>
+                        <p class="nome">Pedro</p>
+                        <p class="numero">9</p>
+                    </li>
+                    <li class="elenco-foto">
+                        <picture>
+                            <img src="../imagens/jogadores-flamengo/ata/cebol.webp" alt="Everton Cebolinha"
+                                class="foto-jogador">
+                        </picture>
+                        <p class="nome">Everton Cebolinha</p>
+                        <p class="numero">11</p>
+                    </li>
+                    <li class="elenco-foto">
+                        <picture>
+                            <img src="../imagens/jogadores-flamengo/ata/juninho.avif" alt="Juninho Vieira"
+                                class="foto-jogador">
+                        </picture>
+                        <p class="nome">Juninho Vieira</p>
+                        <p class="numero">23</p>
+                    </li>
+                    <li class="elenco-foto">
+                        <picture>
+                            <img src="../imagens/jogadores-flamengo/ata/bh27.jpg" alt="Bruno Henrique"
+                                class="foto-jogador">
+                        </picture>
+                        <p class="nome">Bruno Henrique</p>
+                        <p class="numero">27</p>
+                    </li>
+                    <li class="elenco-foto">
+                        <picture>
+                            <img src="../imagens/jogadores-flamengo/ata/rorozinho.webp" alt="Michael"
+                                class="foto-jogador">
+                        </picture>
+                        <p class="nome">Michael</p>
+                        <p class="numero">30</p>
+                    </li>
+                    <li class="elenco-foto">
+                        <picture>
+                            <img src="../imagens/jogadores-flamengo/ata/ft.png" alt="Felipe Teresa"
+                                class="foto-jogador">
+                        </picture>
+                        <p class="nome">Felipe Teresa</p>
+                        <p class="numero">40</p>
+                    </li>
+                    <li class="elenco-foto">
+                        <picture>
+                            <img src="../imagens/jogadores-flamengo/ata/plata.jpg" alt="Gonzalo Plata"
+                                class="foto-jogador">
+                        </picture>
+                        <p class="nome">Gonzalo Plata</p>
+                        <p class="numero">50</p>
+                    </li>
+                    <li class="elenco-foto">
+                        <picture>
+                            <img src="../imagens/jogadores-flamengo/ata/Shola.webp" alt="Ogundana Shola"
+                                class="foto-jogador">
+                        </picture>
+                        <p class="nome">Ogundana Shola</p>
+                        <p class="numero">54</p>
+                    </li>
+                    <li class="elenco-foto">
+                        <picture>
+                            <img src="../imagens/jogadores-flamengo/ata/wally.png" alt="Wallace Yan"
+                                class="foto-jogador">
+                        </picture>
+                        <p class="nome">Wallace Yan</p>
+                        <p class="numero">64</p>
+                    </li>
+                </ul>
 
-            <h3>Meio-Campistas</h2>
-            <ul class="elenco">
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/erick-pulgar-do-flamengo-twitter.jpg"
-                            alt="Erick Pulgar" class="foto-jogador">
-                    </picture>
-                    <p class="nome">Erick Pulgar</p>
-                    <p class="numero">5</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/luizaraujo.jpg" alt="Luiz Araújo"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Luiz Araújo</p>
-                    <p class="numero">7</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/gerson.webp" alt="Gerson" class="foto-jogador">
-                    </picture>
-                    <p class="nome">Gerson</p>
-                    <p class="numero">8</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/arrasca.avif" alt="Giorgian de Arrascaeta"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Giorgian de Arrascaeta</p>
-                    <p class="numero">10</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/nico.jpg" alt="Nicolás de la Cruz"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Nicolás de la Cruz</p>
-                    <p class="numero">18</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/Lorran-Flamengo-1000x600.jpg" alt="Lorran"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Lorran</p>
-                    <p class="numero">19</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/motel-g.jpg" alt="Matheus Gonçalves"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Matheus Gonçalves</p>
-                    <p class="numero">20</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/1711737760-allan-apresentacao.webp" alt="Allan"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Allan</p>
-                    <p class="numero">29</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/Guilherme.webp" alt="Guilherme"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Guilherme</p>
-                    <p class="numero">47</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/evertton-araujo.webp" alt="Evertton Araujo"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Evertton Araujo</p>
-                    <p class="numero">52</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/meias/TCcjz7IjXBr0xVD0.jpeg" alt="Pablo Lucio"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Pablo Lucio</p>
-                    <p class="numero">56</p>
-                </li>
-            </ul>
+                <h3>Meio-Campistas</h3>
+                    <ul class="elenco">
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/erick-pulgar-do-flamengo-twitter.jpg"
+                                    alt="Erick Pulgar" class="foto-jogador">
+                            </picture>
+                            <p class="nome">Erick Pulgar</p>
+                            <p class="numero">5</p>
+                        </li>
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/luizaraujo.jpg" alt="Luiz Araújo"
+                                    class="foto-jogador">
+                            </picture>
+                            <p class="nome">Luiz Araújo</p>
+                            <p class="numero">7</p>
+                        </li>
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/gerson.webp" alt="Gerson"
+                                    class="foto-jogador">
+                            </picture>
+                            <p class="nome">Gerson</p>
+                            <p class="numero">8</p>
+                        </li>
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/arrasca.avif" alt="Giorgian de Arrascaeta"
+                                    class="foto-jogador">
+                            </picture>
+                            <p class="nome">Giorgian de Arrascaeta</p>
+                            <p class="numero">10</p>
+                        </li>
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/nico.jpg" alt="Nicolás de la Cruz"
+                                    class="foto-jogador">
+                            </picture>
+                            <p class="nome">Nicolás de la Cruz</p>
+                            <p class="numero">18</p>
+                        </li>
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/Lorran-Flamengo-1000x600.jpg" alt="Lorran"
+                                    class="foto-jogador">
+                            </picture>
+                            <p class="nome">Lorran</p>
+                            <p class="numero">19</p>
+                        </li>
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/motel-g.jpg" alt="Matheus Gonçalves"
+                                    class="foto-jogador">
+                            </picture>
+                            <p class="nome">Matheus Gonçalves</p>
+                            <p class="numero">20</p>
+                        </li>
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/1711737760-allan-apresentacao.webp"
+                                    alt="Allan" class="foto-jogador">
+                            </picture>
+                            <p class="nome">Allan</p>
+                            <p class="numero">29</p>
+                        </li>
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/Guilherme.webp" alt="Guilherme"
+                                    class="foto-jogador">
+                            </picture>
+                            <p class="nome">Guilherme</p>
+                            <p class="numero">47</p>
+                        </li>
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/evertton-araujo.webp"
+                                    alt="Evertton Araujo" class="foto-jogador">
+                            </picture>
+                            <p class="nome">Evertton Araujo</p>
+                            <p class="numero">52</p>
+                        </li>
+                        <li class="elenco-foto">
+                            <picture>
+                                <img src="../imagens/jogadores-flamengo/meias/TCcjz7IjXBr0xVD0.jpeg" alt="Pablo Lucio"
+                                    class="foto-jogador">
+                            </picture>
+                            <p class="nome">Pablo Lucio</p>
+                            <p class="numero">56</p>
+                        </li>
+                    </ul>
 
-            <h3>Defensores</h2>
-            <ul class="elenco">
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/varela.jpg" alt="Guillermo Varela"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Guillermo Varela</p>
-                    <p class="numero">2</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/leoortiz.jpg" alt="Léo Ortiz"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Léo Ortiz</p>
-                    <p class="numero">3</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/leotrepatrepa.webp" alt="Léo Pereira"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Léo Pereira</p>
-                    <p class="numero">4</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/ayrton.webp" alt="Ayrton Lucas"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Ayrton Lucas</p>
-                    <p class="numero">6</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/danilo.avif" alt="Danilo"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Danilo</p>
-                    <p class="numero">13</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/vina.webp" alt="Matías Viña"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Matías Viña</p>
-                    <p class="numero">17</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/Pablo.webp" alt="Pablo" class="foto-jogador">
-                    </picture>
-                    <p class="nome">Pablo</p>
-                    <p class="numero">21</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/alexsandro.webp" alt="Alex Sandro"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Alex Sandro</p>
-                    <p class="numero">26</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/cleitin-ufc.jpeg" alt="Cleiton"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Cleiton</p>
-                    <p class="numero">33</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/ze_welinton.jpg" alt="Zé Welinton"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Zé Welinton</p>
-                    <p class="numero">39</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/wesley.webp" alt="Wesley"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Wesley</p>
-                    <p class="numero">43</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/carbone2.webp" alt="Carbone"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Carbone</p>
-                    <p class="numero">44</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/danisal.jpeg" alt="Daniel Sales"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Daniel Sales</p>
-                    <p class="numero">51</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/defensores/joao.avif" alt="João Cunha"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">João Cunha</p>
-                    <p class="numero">61</p>
-                </li>
-            </ul>
+                    <h3>Defensores</h3>
+                        <ul class="elenco">
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/varela.jpg"
+                                        alt="Guillermo Varela" class="foto-jogador">
+                                </picture>
+                                <p class="nome">Guillermo Varela</p>
+                                <p class="numero">2</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/leoortiz.jpg" alt="Léo Ortiz"
+                                        class="foto-jogador">
+                                </picture>
+                                <p class="nome">Léo Ortiz</p>
+                                <p class="numero">3</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/leotrepatrepa.webp"
+                                        alt="Léo Pereira" class="foto-jogador">
+                                </picture>
+                                <p class="nome">Léo Pereira</p>
+                                <p class="numero">4</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/ayrton.webp" alt="Ayrton Lucas"
+                                        class="foto-jogador">
+                                </picture>
+                                <p class="nome">Ayrton Lucas</p>
+                                <p class="numero">6</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/danilo.avif" alt="Danilo"
+                                        class="foto-jogador">
+                                </picture>
+                                <p class="nome">Danilo</p>
+                                <p class="numero">13</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/vina.webp" alt="Matías Viña"
+                                        class="foto-jogador">
+                                </picture>
+                                <p class="nome">Matías Viña</p>
+                                <p class="numero">17</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/Pablo.webp" alt="Pablo"
+                                        class="foto-jogador">
+                                </picture>
+                                <p class="nome">Pablo</p>
+                                <p class="numero">21</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/alexsandro.webp"
+                                        alt="Alex Sandro" class="foto-jogador">
+                                </picture>
+                                <p class="nome">Alex Sandro</p>
+                                <p class="numero">26</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/cleitin-ufc.jpeg" alt="Cleiton"
+                                        class="foto-jogador">
+                                </picture>
+                                <p class="nome">Cleiton</p>
+                                <p class="numero">33</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/ze_welinton.jpg"
+                                        alt="Zé Welinton" class="foto-jogador">
+                                </picture>
+                                <p class="nome">Zé Welinton</p>
+                                <p class="numero">39</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/wesley.webp" alt="Wesley"
+                                        class="foto-jogador">
+                                </picture>
+                                <p class="nome">Wesley</p>
+                                <p class="numero">43</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/carbone2.webp" alt="Carbone"
+                                        class="foto-jogador">
+                                </picture>
+                                <p class="nome">Carbone</p>
+                                <p class="numero">44</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/danisal.jpeg" alt="Daniel Sales"
+                                        class="foto-jogador">
+                                </picture>
+                                <p class="nome">Daniel Sales</p>
+                                <p class="numero">51</p>
+                            </li>
+                            <li class="elenco-foto">
+                                <picture>
+                                    <img src="../imagens/jogadores-flamengo/defensores/joao.avif" alt="João Cunha"
+                                        class="foto-jogador">
+                                </picture>
+                                <p class="nome">João Cunha</p>
+                                <p class="numero">61</p>
+                            </li>
+                        </ul>
 
-            <h3>Goleiros</h2>
-            <ul class="elenco">
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/goleiros/rossi.jpg" alt="Agustín Rossi"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Agustín Rossi</p>
-                    <p class="numero">1</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/goleiros/matheus-cunha.jpg" alt="Matheus Cunha"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Matheus Cunha</p>
-                    <p class="numero">25</p>
-                </li>
-                <li class="elenco-foto">
-                    <picture>
-                        <img src="../imagens/jogadores flamengo/goleiros/dyogo.png" alt="Dyogo Alves"
-                            class="foto-jogador">
-                    </picture>
-                    <p class="nome">Dyogo Alves</p>
-                    <p class="numero">49</p>
-                </li>
-            </ul>
+                        <h3>Goleiros</h3>
+                            <ul class="elenco">
+                                <li class="elenco-foto">
+                                    <picture>
+                                        <img src="../imagens/jogadores-flamengo/goleiros/rossi.jpg" alt="Agustín Rossi"
+                                            class="foto-jogador">
+                                    </picture>
+                                    <p class="nome">Agustín Rossi</p>
+                                    <p class="numero">1</p>
+                                </li>
+                                <li class="elenco-foto">
+                                    <picture>
+                                        <img src="../imagens/jogadores-flamengo/goleiros/matheus-cunha.jpg"
+                                            alt="Matheus Cunha" class="foto-jogador">
+                                    </picture>
+                                    <p class="nome">Matheus Cunha</p>
+                                    <p class="numero">25</p>
+                                </li>
+                                <li class="elenco-foto">
+                                    <picture>
+                                        <img src="../imagens/jogadores-flamengo/goleiros/dyogo.png" alt="Dyogo Alves"
+                                            class="foto-jogador">
+                                    </picture>
+                                    <p class="nome">Dyogo Alves</p>
+                                    <p class="numero">49</p>
+                                </li>
+                            </ul>
         </article>
     </section>
 
@@ -396,31 +406,8 @@
         <p>Desenvolvido por Guilherme Adriano e Pedro Bittencourt</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Seleciona todas as imagens dos jogadores
-            const jogadores = document.querySelectorAll(".foto-jogador");
-    
-            jogadores.forEach(jogador => {
-                jogador.addEventListener("mouseover", function () {
-                    // Esconde o nome e o número do jogador relacionado ao hover ativo
-                    const parent = this.closest(".elenco-foto");
-                    parent.querySelectorAll(".nome, .numero").forEach(elemento => {
-                        elemento.style.display = "none";
-                    });
-                });
-    
-                jogador.addEventListener("mouseout", function () {
-                    // Mostra novamente o nome e o número do jogador quando o hover é removido
-                    const parent = this.closest(".elenco-foto");
-                    parent.querySelectorAll(".nome, .numero").forEach(elemento => {
-                        elemento.style.display = "block";
-                    });
-                });
-            });
-        });
-    </script>
-
+    <script src="../scripts/elenco.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>

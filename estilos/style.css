@@ -1,24 +1,19 @@
 @charset "UTF-8";
 
-@media only screen and (max-width: 600px) {
-    section {
-        width: 100vw;
-    }
-}
-
 @font-face {
     font-family: Mengao;
     src: url(Rajdhani-Regular.ttf)
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: MengaoGordin;
     src: url(Rajdhani-SemiBold.ttf)
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: MengaoGordasso;
     src: url(Rajdhani-Bold.ttf)
-  }
+}
 
 * {
     margin: 0;
@@ -26,7 +21,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     box-sizing: border-box;
     display: grid;
     height: 100vh;
@@ -48,11 +43,12 @@ header {
     grid-column: 1/4;
     position: relative;
 }
+
 .h1header {
-color: white;
-padding: 5px;
-font: 70px MengaoGordasso, sans-serif;
-text-align: center;
+    color: white;
+    padding: 5px;
+    font: 70px MengaoGordasso, sans-serif;
+    text-align: center;
 }
 
 h2 {
@@ -66,11 +62,12 @@ h3 {
     display: inline;
 }
 
-p, li{
+p,
+li {
     font: 20px Mengao, sans-serif;
 }
 
-p{
+p {
     text-indent: 3em;
 }
 
@@ -80,7 +77,8 @@ nav {
     justify-content: center;
     gap: 2px;
 }
-.opcoes{
+
+.opcoes {
     color: white;
     font: 18.6px MengaoGordin, sans-serif;
     height: 50px;
@@ -96,15 +94,26 @@ nav {
     justify-content: center;
     transition: all 0.5s ease;
 }
+
 .opcoes:hover {
     width: 140px;
     border-style: outset;
     text-decoration: underline;
-    font-family:MengaoGordasso, sans-serif ;
+    font-family: MengaoGordasso, sans-serif;
 }
 
 .opcoes:active {
-    background-color:  #570303;
+    background-color: #570303;
+}
+
+.icone-burger {
+    background-color: white;
+    color: red;
+    width: 100vw;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
 }
 
 .logoHeader {
@@ -115,28 +124,25 @@ nav {
     left: 60px;
 }
 
-.imgIdolos{
-    height: 400px;
-    width: 500px;
+.imgIdolos {
+    margin: 15px 0px;
+}
+
+.imgHistoria {
     margin: 25px 0px;
 }
 
-.imgHistoria{
-    height: 400px;
-    width: 500px;
+.imgTitulo {
     margin: 25px 0px;
 }
 
-.imgTitulo{
-    height: 415px;
-    width: 1550px;
+.imgIntroducao {
     margin: 25px 0px;
 }
 
-.imgIntroducao{
-    height: 415px;
-    width: 925px;
-    margin: 25px 0px;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 section {
@@ -153,7 +159,7 @@ section {
     box-shadow: 1px 0px 11px 4px #e5dadaeb;
 }
 
-.classLi{
+.classLi {
     display: flex;
     justify-content: center;
 }
@@ -166,12 +172,10 @@ article {
     border-radius: 8px;
 }
 
-ul, ol
-{
+ul,
+ol {
     list-style-position: inside;
 }
-
-
 
 footer {
     background-image: linear-gradient(to right, #000000, #1e060b, #31090f, #44060c, #570303);
@@ -182,9 +186,41 @@ footer {
     grid-column: 1/4;
 }
 
+@media only screen and (max-width: 1240px) {
+    .logoHeader {
+        left: 0px;
+    }
+}
 
+@media only screen and (max-width: 1090px) {
+    .logoHeader {
+        width: 90px;
+        height: 90px;
+    }
+}
 
-/* Responsividade */
+@media only screen and (max-width: 970px) {
+    .logoHeader {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .h1header {
+        font-size: 50px;
+    }
+
+    .opcoes {
+        width: 75px;
+        height: 35px;
+    }
+
+    .opcoes:hover {
+        width: 90px;
+        height: 35px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     body {
         grid-template-columns: 1fr;
@@ -211,6 +247,27 @@ footer {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    section {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .h1header {
+        font-size: 40px;
+    }
+
+    .icone-burger {
+        display: block !important;
+    }
+
+    #barra-navegacao {
+        display: none;
+    }
+
+}
+
 @media only screen and (max-width: 480px) {
     .h1header {
         font-size: 35px;
@@ -228,5 +285,11 @@ footer {
     .opcoes {
         width: 100px;
         font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .h1header {
+        font-size: 25px;
     }
 }
